@@ -15,6 +15,7 @@ class MainActivity : AppCompatActivity() {
         val exam4:Button = findViewById(R.id.button4)
         val exam5:Button = findViewById(R.id.button9)
         val exam6:Button = findViewById(R.id.button10)
+        val exam7:Button = findViewById(R.id.button15)
         exam1.setOnClickListener {
 
             val intent = Intent(this, Exam1::class.java)
@@ -38,6 +39,10 @@ class MainActivity : AppCompatActivity() {
         }
         exam6.setOnClickListener {
             val intent = Intent(this, Exam6::class.java)
+            startActivity(intent)
+        }
+        exam7.setOnClickListener {
+            val intent = Intent(this, Exam7::class.java)
             startActivity(intent)
         }
     }

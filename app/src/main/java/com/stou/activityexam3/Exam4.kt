@@ -22,8 +22,13 @@ class Exam4 : AppCompatActivity() {
         button.setOnClickListener {
             Toast.makeText(this, "Click Me Button", Toast.LENGTH_LONG).show()
         }
-        switch.setOnClickListener {
-            Toast.makeText(this, "Click Me Switch", Toast.LENGTH_LONG).show()
+        switch.setOnCheckedChangeListener { buttonView, isChecked ->
+            if (isChecked){
+                Toast.makeText(this, "Click Me Switch ON", Toast.LENGTH_LONG).show()
+            }else{
+                Toast.makeText(this, "Click Me Switch OFF", Toast.LENGTH_LONG).show()
+
+            }
         }
     }
 }
